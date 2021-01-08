@@ -1,0 +1,57 @@
+I was asked by a friend recently if I was able to design a rendition of Mario.
+He had grand designs for some of the characters. Happy that I had just learned
+some about HTML5 <canvas> [http://www.w3schools.com/html/html5_canvas.asp], I
+quickly obliged, ready to take on the challenge.
+
+[images/posts/flappyAction.png]
+
+Unfortunately, within minutes I realize how little I knew about Mario. I decided
+to change it to something simpler. Flappy Bird [http://flappybird.io/], the
+minimalistic, pixelated, Nintendo-right-infringing iPhone game that caught the
+world by storm for a few days, came to mind. It was quickly taken down because
+Nintendo had claims to some similar design features
+[http://www.ibtimes.com/flappy-bird-game-deleted-over-nintendo-copyright-creator-receiving-death-threats-1554401].
+Anyhow, it was popular, I understand the basics, and the framework I had built
+for Mario so far (i.e., the floor and the background) didn't have to be
+scrapped.
+
+Another inspiration of mine was Hunter Lightman
+[http://hunterlightman.com/2014/01/30/flappy-block/#more-219], a coder a few
+years above me at my school. According to his blog, he challenged himself to
+build a version of Flappy Bird in 25 minutes! And he followed through with a
+game that is deployable on both Android and iOS. That's truly amazing. I don't
+have the necessary tools to develop for mobile systems, but I thought the idea
+of designing it with Canvas would be simple enough. It's not a fully-featured
+app-designer, and it is meant mainly for simple graphics and animations.
+According to Wikipedia:
+
+> The canvas element is part of HTML5 and allows for dynamic, scriptable
+> rendering of 2D shapes and bitmap images. It is a low level, procedural model
+> that updates a bitmap and does not have a built-in scene graph.Wikipedia,
+> "Canvas Element" [https://en.wikipedia.org/wiki/Canvas_element]
+
+As you can see, it is often meant for quick scripting, on the fly. There are
+many other, more popular game-building platforms, such as Adobe Flash
+[https://en.wikipedia.org/wiki/Adobe_Flash]. But because it is one of the few
+(perhaps only?) scriptable-graphics platforms I know, I decided to go along with
+it.
+
+Here is the finished product. Along with the basic features of Flappy Bird
+(namely a "flappy bird" and simple Nintendo-ish pipes to avoid), I added a few
+extras for fun and for practice. The clouds were done similar to the pipes, a
+constant stream of randomly-generated figures (that are also randomly spaced). I
+created hit regions for the buttons (which is not too simple with Canvas because
+it "does not provide information about any drawn objects"
+[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Hit_regions_and_accessibility]).
+And I reinforced my knowledge of the basic animations and shapes. Like Hunter
+Lightman, I probably spent the most time tweaking play-ability factors such as
+gravity and sizes of objects, but there was also a considerable amount of time
+spent debugging because of my unfamiliarity. All in all, it took from yesterday
+morning to tonight, with about three hours coding and a little bit more time
+thinking. It's just over 500 lines of code. Luckily, I didn't have to focus on
+too many optimizations, because it is so simple; however, it was still more
+difficult than I originally had predicted. Overall, however, it was a fun little
+project and a great first attempt at a real video game.
+
+Happy flapping with Flappy [extras/Flappy]!
+

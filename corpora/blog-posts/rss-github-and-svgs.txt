@@ -1,0 +1,35 @@
+The Homework Life is one step closer to becoming a more widely supported blog
+with RSS feeds! Now, you can subscribe to the feed [feed.xml] by simply giving
+the link to a feed reader, such as FeedReader [http://feedreader.com/]. It
+allows you to easily see the ten most recent posts without having to regularly
+check the site, and from a feedreader in which you can check all your favorite
+other blogs and news sources.
+
+The Homework Life has also returned to GitHub [https://github.com/] at
+jlam55555/the-homework-life [https://github.com/jlam55555/the-homework-life].
+The full code is there, and I'll be committing to it with any updates I make. It
+only includes the main site, however— other, side projects are hosted in their
+own repositories.
+
+Another fancy improvement to the site will be the increasing usage of SVG images
+[https://en.wikipedia.org/wiki/Scalable_Vector_Graphics]. This post image, for
+example, is one. SVGs have the power to infinitely scale— no zooming will
+decrease its resolution, unlike most other image formats, which are raster
+images rather than vector graphics. Try it on the post image, for example: open
+it on a new tab and zoom! They are defined based on shapes, not pixels, and they
+are written in plain XML (simple text). Now, although it is still a non-standard
+web technology, it has widespread support [http://caniuse.com/#feat=svg] amongst
+all the major browsers. I've been using Inkscape [https://inkscape.org/en/] to
+create them, and I'd highly recommend it.
+
+Update: Here are some other examples of fun SVGs to create. The cow was created
+from a PNG image [https://openclipart.org/detail/17676/cartoon-cow], and the
+tree was created from a JPG image
+[http://c85c7a.medialib.glogster.com/media/38/38f41db110cb7f0978670f05af2a42d443ae63204aca54703ac1baa2e795a97d/tree-in-meadow.jpg]
+that was manipulated with Inkscape's Vonoroi Diagram Delaunay Triangulation to
+create a "low polygonal art" effect
+[http://goinkscape.com/low-poly-art-tutorial-using-inkscape/]. Again, look at
+their actual sizes (50px by 50px and 40px by 40px, respectively) to see that
+they really do scale.
+
+[/images/posts/cow.svg][images/posts/tree.svg]

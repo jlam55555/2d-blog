@@ -1,0 +1,70 @@
+Sorry for the lack of posting in the past few days. I have been busy with other
+projects, especially with Node.js [https://nodejs.org/en/], an amazing
+JavaScript platform. It's extremely confusing and frustrating right now, but I'm
+managing to slowly work my way through and learn some new tricks.
+
+Right now, my main focus as a side project is a card game called "Pa Pei"
+(literally "hit nose" in Chinese, referring to the penalty for the loser at the
+end of the game). Play is going to be real-time, fast, and with cool graphics (I
+messed around with HTML canvas again to dynamically generate cards— it will also
+help in the future if I want to create new themes). But again, it's complicated,
+I still need to work out much of the gameplay logistics and finalize the
+foundation that I've created. I'll try to finish it soon.
+
+However, in the meantime, I would like to announce that I will again attempt
+Project Euler [https://projecteuler.net/] problems. They are math problems aimed
+at programming solutions, because they are simply too tedious and time-consuming
+to do by hand or with a simple calculator. They require complex algorithms— some
+may take even a modern computer billions to trillions of years if brute-forced
+(if you try every possible combination). They're interesting and brain-killing.
+
+For example, here is the first one:
+
+> If we list all the natural numbers below 10 that are multiples of 3 or 5, we
+> get 3, 5, 6 and 9. The sum of these multiples is 23.
+> Find the sum of all the multiples of 3 or 5 below 1000.Project Euler Question
+> 1 [https://projecteuler.net/problem=1]
+
+And here's my solution:
+
+
+
+// JavaScript
+var sum = 0;
+for(var i = 0; i < 1000; i++)
+    if(i % 3 == 0 || i % 5 == 0)
+        sum += i;
+
+
+
+And the (correct) answer is: 233168.
+
+So I will try and post one of these every day if I can figure one out and if I
+do not post a regular post. I'm also considering posting about a list of new
+interesting words as a different type of daily post in order to expand my
+vocabulary. If I do not post it, the solutions I have will be posted in the as
+an Extra under Euler [extras/Euler].
+
+And lastly, I've added a little feature to the site that I'm anticipating that I
+will use soon: foreign-language text! Check out the following:
+
+
+
+ä½ å¥½!
+Language: Chinese See translation
+[https://translate.google.com/#zh-CN/en/ä½ å¥½!]
+
+
+
+
+
+Bonjour!
+Language: French See translation [https://translate.google.com/#fr/en/Bonjour!]
+
+
+
+
+
+Â¡Hola!
+Language: Spanish See translation [https://translate.google.com/#es/en/Â¡Hola!]
+

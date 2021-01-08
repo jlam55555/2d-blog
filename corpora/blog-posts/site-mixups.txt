@@ -1,0 +1,27 @@
+There have been many major site improvements I made today! Many are graphical
+changes I decided to mix up to help the functionality of the site. Here are some
+of them:
+
+[images/posts/newlogo.png]The (arguably) most drastic change is the logo. No
+longer a smug smiley-face, I drew this new one with an intention to convey a
+more accurate tone. And I drew it in many layers, so I can disassemble and mix
+it up like the image above! The reduced logo (for the favicon and the Apple
+touch-icon for the web-application) is just the calculator in the center. Sorry
+the pen and the pencil are a little skewed— I quickly free-handed it on
+GIMP.[images/posts/newfont.png]I also have a new font at play for the body text
+(not the headers). It's a sleek font called "San Francisco" (a punny name for a
+sans serif-font). It's quite elegant and thin, especially on high-resolution
+screens.[images/posts/newScrollbar.png]There's now a dark, thin scrollbar to
+replace the default one for a cleaner, sleeker look. It replaces only the
+desktop version though. Edit: I realize now that this image is cut off. If
+you're on the desktop site, you'll see what I
+mean.[images/posts/centeredTop.png]All the elements in the sidebar (desktop) or
+top (mobile) are now centered both horizontally and vertically! It's a minor
+change, but the off-centeredness bothered me for quite a
+while.[images/posts/newCollapsed.png]The most helpful update is the new
+collapsed view on mobile. No longer showing up with confusing hover
+pseudo-elements (which doesn't work well with tapping and touchscreens), only
+the titles show. It's more ideal for a small screen, especially that of a
+smartphone. This is paired with the smaller "Back to Top" button on mobile as
+well.
+

@@ -1,0 +1,29 @@
+I was playing around with Google Chrome themes and extensions recently. Here's
+what I've come up with in the last day:
+
+
+
+ * Dark Theme [downloads/DarkTheme.crx]: A minimalist, black and dark-grey
+   theme.
+ * Chat Newtab Replacement [downloads/ChatExtension.crx]: I've modified my Chat
+   application to be a Chrome extension. It's also improved in that you cannot
+   post before it has connected with the server.
+ * UPDATE: Chat Popup [downloads/ChatPopup.crx]: Perhaps a more useful version
+   of the newtab extension, this shows a popup once you click the extension
+   button in the top-right of Chrome. Having to sign-in every time is a bit
+   tedious, however.
+
+
+
+To install either of these extensions (a theme is a special type of extension),
+you have to drag and drop the .crx file into the chrome://extensions page. You
+can't see my mouse in the screenshot above, but it shows the general idea. Allow
+it to be added to Chrome.
+
+If I had five bucks, I would add it to the Chrome Web Store
+[https://chrome.google.com/webstore/], but I don't and I'm too lazy. Therefore,
+your administrator might block the extensions because they are unofficial (as my
+school one did).
+
+(And if you can't do the above because you don't have Chrome, get it
+[https://www.google.com/chrome/browser/desktop/index.html])!

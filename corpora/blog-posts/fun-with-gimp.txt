@@ -1,0 +1,12 @@
+GIMP (GNU Image Manipulation Program) [https://www.gimp.org/] is a wonderful
+free image editing program. It comes default for some versions of Ubuntu and is
+a great free alternative to other powerful ones out there.
+
+I'd only been using it for very simple image editing (If I was away, I would use
+Autodesk Pixlr [https://pixlr.com/editor/], a wonderful in-browser, also-free
+alternative.), but today I decided to check out their tutorials page
+[http://www.gimp.org/tutorials/].
+
+So far I'd only tried out the first two tutorials, but it's great fun!
+
+[images/posts/gimpBasics1.png][images/posts/gimpBasics2.png][images/posts/gimpBasics3.png][images/posts/gimpBasics4.png]

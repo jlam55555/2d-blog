@@ -1,0 +1,6 @@
+And yet again, there have been improvements to the site. To the sidebar, there
+has been a color change, and I fixed a few bugs I created with the overall look
+when working with the web app. The web app is now more functional, but there are
+a few bugs that I can't seem to fix (one appears to be an iOS 9 bug
+[http://stackoverflow.com/questions/32721596/], so I'm not to blame). I've even
+updated the update interface, so the better for me!

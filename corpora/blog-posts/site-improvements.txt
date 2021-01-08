@@ -1,0 +1,15 @@
+I made a few quick changes to improve the overall display of the website.
+
+First of all, the date will not change if I edit a post. Therefore, the posts
+will appear in chronological order, and this will avoid confusion when I do edit
+a post. I will indicate when I update a post directly in the update instead. (I
+will update the previous update on updating posts to make sure that this will
+work).
+
+Secondly, all <a> (link), <em> (italics), and <strong> (bold) tags appear inline
+and with their parent's font-size and color. This will avoid some
+inconsistencies in the font that appeared earlier. Long links also were
+problematic in the mobile version, and this will fix that as well.
+
+Also, as a precaution, I will be backing up the site posts. It won't affect you,
+but it's for my peace-of-mind.

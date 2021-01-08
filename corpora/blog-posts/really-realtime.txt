@@ -1,0 +1,14 @@
+[http://blog.ijasoneverett.com/wp-content/uploads/2013/03/nodejs_logo.png]
+
+I was experimenting around with Node.js [https://nodejs.org/en/], a powerful
+JavaScript library that I had little understanding of. This was because I had
+heard it had certain websocket [http://www.websocket.org/] back-end capabilities
+that I had wanted for real-time data updates. In this, the server (the back-end)
+can send data back to the client (the front-end, or browser), which is a
+powerful tool that I've never encountered.
+
+So I played around with it a little bit, and I eventually made a little
+real-time chat program with Socket.io [http://socket.io/], which builds a
+websocket server-side. See my demo at Realtime Chatting
+[https://lam-node-test.herokuapp.com/].
+

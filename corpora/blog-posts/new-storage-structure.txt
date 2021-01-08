@@ -1,0 +1,11 @@
+The Homework Life has switched over to a (MariaDB) database for storage! Now
+posts will be more secure and faster to load.
+
+We have switched from the JSON format (much easier to set up but harder to
+maintain, especially as data gets BIG) to a relational database. Now, after some
+tedious setup, the site will load quicker on any load, without having to load
+every single post as it had to before. With the JSON file that had to be loaded
+quickly approaching 50 kilobytes in size, this started to get ideal â€¦ why not
+just query a database for the little information you're actually looking for?
+
+It's still a little experimental, so let's see how this turns out!

@@ -1,0 +1,36 @@
+I was playing around with HTML5 <canvas>
+[http://www.w3schools.com/html/html5_canvas.asp] these past few days, and this
+is the most exciting piece I've made so far (besides a game that I just started
+that's getting exponentially complex the farther I go, so chances are I'm not
+going to finish it). I have been using the Mozilla Developer Network (MDN)
+Canvas Tutorials
+[https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial] to learn
+how to use canvas. (And if you didn't catch on already, canvas is a way to
+easily create graphics with JavaScript.)
+
+The program is essentially a text-to-image converter. There are a few features
+you can do to the text, such as adjust the font size, whether it is bold or
+italic (or both), the font, the width and height of the canvas, and the colors
+of the letters. As of now, the colors just repeat in the order they are given,
+and the text is always centered both vertically and horizontally, so there is a
+little bit of rigidity. Another cool feature is the lightening of the letters: I
+initially added this to create the slight gradient from top-left to bottom-right
+of the words to create hte kind of effect the Google logo has (and you can see
+it in the above example).
+
+[images/posts/wordTheHomeworkLife.png]
+
+As you can see on the left, the gradient effect is cool on dark colors as well.
+But even cooler of a feature is the conversion directly to a downloadable
+portable network graphics (PNG) image (with a transparent background, too!).
+I've never been too involved with graphics, especially programmable ones, and
+this really excited me. The image on the left was a one downloaded from the site
+with some modified settings (font size: 110, text: "The Homework Life", brighten
+by: 255, styles: "bold", font family: "ubuntu", width: 1024, height: 220,
+colors: ["#000000"]). The idea of the digital image fascinates me: they are
+stored as zeroes and ones just as text is, and that monotonous binary can turn
+into beautiful colors and shapes. And now I can make it directly from code!
+
+TheHomeworkLife Word [extras/Word] is easily available on this site with the
+other projects.
+

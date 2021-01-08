@@ -1,0 +1,15 @@
+The result of my preliminary experimentation
+[http://www.thehomeworklife.co.nf/index.html?post=27] with Node.js and Socket.io
+has resulted in an interesting, real-time chat application!
+
+You can visit it either at lam-node-test.herokuapp.com
+[https://lam-node-test.herokuapp.com] where it's hosted on Heroku
+[https://www.heroku.com/] or here at TheHomeworkLife
+[http://www.thehomeworklife.co.nf/extras/Chat]. They both push messages towards
+the same server, so if you see messages on either application, it'll show up on
+both! It's still in real-time, and now uses FontAwesome icons that I was
+experimenting with before [http://www.thehomeworklife.co.nf/index.html?post=25].
+
+Note that there may be a few-second delay (a warming-up of the Node.js server)
+when first visiting the site for the first time. This is the result of my free
+hosting. It should start quickly in subsequent runs.

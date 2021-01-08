@@ -1,0 +1,23 @@
+I know I just said that I wouldn't be making updates to the site, but it's a
+Saturday and I have time. There were a few minor details I wanted to fix to
+improve the site, like always. Here's an overview:
+
+ * FontAwesome Icons I've replaced some of the minor images to FontAwesome icons
+   [https://fortawesome.github.io/Font-Awesome/]. As I've mentioned earlier,
+   it's pretty amazing [http://www.thehomeworklife.co.nf/index.html?post=25]:
+   it's clean, it's versatile, and it acts like dynamic, style-able regular
+   text.
+ * Improved Post Listing I've added the date and author of the posts for clarity
+   in the About section.
+ * Fixed Dark Gradients In Safari (for iOS), the gradients from transparent to
+   white were too dark. This has been fixed.
+ * Stopped Syntax Highlighting I felt that the extra time spent loading the
+   scripts for syntax highlighting were unnecessary, even despite its
+   awesomeness. I figured you all don't care about code that much anyways. In
+   addition, there haven't been many posts with code (only two)— the code will
+   still be formatted with indenting monospaced text, but it will not be colored
+   anymore.
+
+
+
+Also, this is the fiftieth post! I'm surprised I survived this far!

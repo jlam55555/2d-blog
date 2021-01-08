@@ -1,0 +1,62 @@
+Simply put, I had a suboptimal school day today.
+
+In Wellness, we had a test on CPR, in which we hadn't covered many of the
+scenarios that were supposed to be "common sense." I've always had a problem
+with common sense.
+
+Secondly, we had a test in Chemistry about the hardness of water
+[https://www.fcwa.org/water/hardness.htm], soap versus detergents
+[http://blog.wondercide.com/soap-vs-detergent-do-you-know-the-difference/], and
+the periodic table: its discovery, its structure, and some specifics about
+notable families
+[http://www.dummies.com/how-to/content/the-periodic-table-families-and-periods.html].
+According to Dr. Nuzzo, it was the easiest test this quarter; however,
+considering her tests, it was still daunting.
+
+[http://liveitoutloud.com/image.axd?picture=2014%2F10%2Fthreekindsofpeople.jpg]
+
+The real horrors began with math, the most unlikely story. The problem is that I
+like math. I like to think of myself as "mathematically fluent." And I don't get
+many problems wrong. I'm not boasting — according to the image on the right, I'm
+right along with the top 1/3 of the world.
+
+The test was coming along well until I began to check my work. I had done three
+polynomial division [http://www.purplemath.com/modules/polydiv2.htm] problems
+incorrectly, and I had almost forgotten the remainder theorem
+[https://en.wikipedia.org/wiki/Polynomial_remainder_theorem]. With only ten
+minutes left, I set off correcting my mistakes. The last problem to correct was
+a simple factoring problem:
+
+[http://mathurl.com/h4lgf4o.png]
+
+I had correctly found the zero of 1 and factored it:
+
+[http://mathurl.com/j6mykdk.png][http://mathurl.com/z73p4zq.png]
+
+And then, with the almighty quadratic formula
+[http://www.purplemath.com/modules/quadform.htm], I found the values of x (the
+zeroes of the function).
+
+[http://mathurl.com/zfs7mnk.png]
+
+And then, forgetting that we had to have integer coefficients for factoring, I
+naively put these two back in the function incorrectly.
+
+[http://mathurl.com/zkdwzn9.png]
+
+When it should have been like so:
+
+[http://mathurl.com/zeoso9g.png]
+
+Then, in math team [https://fcml.wikispaces.com/], a similar trend followed, and
+I had three questions that I missed by a small margin that cost me many points.
+I barely made A team today. Much of this may be attributed to a lack of
+studying, but there's finals and bowling and sleeping and school and worrying
+Nuzzo quizzes that I have to be concerned about. And on top of everything, I
+obtained a cankersore and two papercuts. What a day!
+
+(Sorry for the poor math rendering or the boring-ness of the equations; I'll try
+to use better math rendering [http://www.mathjax.org/] if I attempt to explain
+math in the future. And sorry that I'm complaining about life — however, this is
+the homework life)
+

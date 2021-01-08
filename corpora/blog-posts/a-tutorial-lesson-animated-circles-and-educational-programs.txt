@@ -1,0 +1,32 @@
+I worked with the new Programming Club after school today. An alumni worked us
+through a simple webpage themed like his webpage [http://www.hunterlightman.com]
+that used jQuery to position and animate. It was quite interesting, and I
+learned a simple, mathematical way to animate items in circles basic with
+trigonometry. You can see my tweaked result at Planetary [extras/Planetary]. I'm
+very excited for future projects like this, especially when I can pick up a tip
+or two on algorithms such as the circle one.
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+Other Updates:
+
+ * I also created a program based on the need to balance chemical equations
+   [http://www.chemteam.info/Equations/Balance-Equation.html]. You can see this
+   at Balencistry [extras/Balencistry]. It allows you to visually see the
+   comparison of different elements on both sides with a double bar graph.
+ * In the same spirit of school topics, I've also uploaded Periodic Letters
+   [extras/PeriodicLetters], a tool for a project earlier this year. We were
+   consolidating our knowledge on the structure of the periodic table, and our
+   quarter project was to make a popular phrase using just periodic elements.
+   I've also included "Jelementium" (J) and "Unoctquadium" (Uoq) in order to get
+   all of the missing elements. I didn't focus much on printing, so long words
+   are discouraged.
+ * And lastly, I changed the URLS of the single-page project pages (namely,
+   Memory Game [extras/MemoryGame] and Tic Tac Toe [extras/TicTacToe]) to
+   directories instead of individual files. All the links on this site have been
+   updated.
+

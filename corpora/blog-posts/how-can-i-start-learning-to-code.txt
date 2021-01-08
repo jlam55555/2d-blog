@@ -1,0 +1,90 @@
+The world of code is pretty amazing. Many others in our innovative generation
+are looking for ways to learn code. I've even had people come up to me — yes,
+that amateur, introverted, me — to ask how they can start learning code or what
+they should start out with.
+
+The truth is, it's really not that difficult to find a place to start. From a
+Google point of view
+[https://www.google.com/search?q=where+to+start+learning+code&oq=where+to+start+learning+code&aqs=chrome..69i57.4639j0j7&sourceid=chrome&es_sm=93&ie=UTF-8],
+there's no problem; chances are, you've probably turned to that Google search
+far before you've reached this, and this will be much less helpful to you. But,
+as I've said, I'm writing to put my own two cents
+[https://en.wikipedia.org/wiki/My_two_cents] into it.
+
+[http://blogs-images.forbes.com/larrymagid/files/2014/11/code111111111111.jpg]
+
+Two great general-coding-teaching sites, who have made their name known in the
+last few years for their popularity, are Codecademy
+[https://www.codecademy.com/] (note the missing "a" in the middle; that had me
+confused for a while) and Code School [https://www.codeschool.com/]. They're
+both really cool FREE sites with lots of hands-on activities (and lots of
+painful, repetitive typing, too) to help you learn. In addition, Code School has
+plenty of videos in addition. Codecademy is the more popular, featuring plenty
+of activities even without upgrading to Codecademy Pro
+[https://www.codecademy.com/pro].
+
+Both of the aforementioned sites focus on web languages, but there are other
+sites devoted entirely to it. If you haven't noticed, the web is becoming one of
+the most important driving forces in our lives
+[http://www.abc.net.au/news/2014-05-25/internet-changes-over-20-years/5470442].
+From Google's search to Facebook's social media to Uber's sharing economy, our
+life will never be the same. So how can you get started with those?
+
+Check out W3Schools [http://www.w3schools.com/]. When I started out with HTML,
+this was my greatest help. It's been improving a lot recently, adding official
+certification in web technologies and interactive activities.
+
+In addition to all of these major languages, CSS, or Cascading Style Sheets is
+becoming much more prevalent in our world today. CSS adds the style to our
+applications and webpages, and it's improving to better our program interfaces.
+CSS Tricks [https://css-tricks.com/] is a great way to learn the coolest effects
+with CSS (in addition to the basic ones that you can learn on one of the other
+sites) such as a frosted glass effect
+[https://css-tricks.com/frosting-glass-css-filters/] or the gooey effect
+[https://css-tricks.com/gooey-effect/].
+
+Some additional resources I've already mentioned StackOverflow
+[http://stackoverflow.com/] as an indispensable tool to help out in any sort of
+situation through living, professional programmers. To finish up, I'd like to
+briefly introduce some programs to help you
+code.[http://upload.wikimedia.org/wikipedia/commons/0/0f/Notepad%2B%2B_Logo.png]
+
+ * General purpose text editors These are versatile code editors for any
+   language.
+   
+   * Notepad++ [https://notepad-plus-plus.org/] It's light, has syntax
+     highlighting, and got a cool, extremely random logo.
+   
+   * GEdit [https://wiki.gnome.org/Apps/Gedit] The default Ubuntu text editor.
+     Very similar to Notepad++, but with fewer features.
+   
+   * Vim [https://wiki.gnome.org/Apps/Gedit] A terminal-based editor. It has a
+     high learning curve, but it's worth learning. It's powerful if used well.
+   
+   * Atom [https://atom.io/] I just started using this. It's probably the most
+     powerful of these, and packed with many code-related features. Also can
+     open images.
+   
+   
+
+ * Language-specific editors These are only for a certain language, with
+   features more directed towards that language
+   
+   * JSFiddle [https://jsfiddle.net/] and CodePen [http://codepen.io/] Both of
+     these are online "JavaScript playgrounds" that allow for quick and easy
+     HTML, JS, and CSS testing. Sharing is also very easy.
+   
+   * Eclipse [https://eclipse.org/] A popular IDE (Integrated Development
+     Environment) for one of the most popular languages, Eclipse is a very
+     powerful editor to develop and test Java applications.
+   
+   
+
+
+
+This is by no means a complete list (especially because I don't use the popular
+Mac OS and my knowledge of its applications is very limited — go with the Google
+search for a richer compilation), but instead what I personally have found
+helpful and free in my novice coding experience. If you're looking to start
+coding, I hope this list will help!
+

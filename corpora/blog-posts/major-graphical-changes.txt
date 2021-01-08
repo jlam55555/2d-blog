@@ -1,0 +1,15 @@
+A new favicon (the icon next to the title in the tab bar), a new logo (which I
+made), a new web-application for iOS … thehomeworklife has underwent major
+graphical changes today!
+
+[http://www.howtogeek.com/wp-content/uploads/2014/09/650x440xadd-website-to-home-screen-in-safari-on-ipad-with-ios-7.png.pagespeed.gp+jp+jw+pj+js+rj+rp+rw+ri+cp+md.ic.E9lhZ45cCO.png]
+
+To activate the web-application, open Safari on your mobile device, and click
+the "Share" button as you see in the image on the right. Then, scroll right on
+the bottom row and click on "Add to Home Screen." This should add an app-like
+icon to your home screen, and it should look like a regular, standalone app when
+you open it.
+
+As of now, the mobile version is very buggy, especially with the small screen
+size of the iPhone, but I'll try to improve it soon. For now, enjoy!
+

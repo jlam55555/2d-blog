@@ -1,0 +1,77 @@
+Coding
+
+
+
+ * I've got another one. Based off of Jacob Wunder [http://jacobwunder.com/]'s
+   Tap Tap Pop! [http://jacobwunder.com/tap-tap-pop/] (which was based off of
+   Pop the Lock
+   [http://www.phonesreview.co.uk/2015/10/02/simple-machine-brings-pop-the-lock-to-android/]),
+   here [extras/PopTheLock] is my own version of Pop the Lock. It's arguably
+   very simple, minimalistic, and feature-less— but it captures the main essence
+   of the game1.
+ * I'm getting along farther with Project Euler [https://projecteuler.net/] now.
+   I've completed 62 problems (up to question 97), and they are really a fun
+   challenge in the world of the dull challenges of school. Feel free to check
+   out my solutions at my Euler page [extras/Euler].
+ * The new programming club at Barlow2 is moving along smoothly. Many of the
+   others are learning game development, especially through JS and its
+   libraries. I've worked on a fun little website
+   [http://barlowprogramming.github.io/] with it, which uses many new
+   technologies. I've worked with others (essentially) for the first time, and
+   learned some more of the GitHub workflow. I've even got some people to try
+   Project Euler with me! Us nerds are busy learning and coding. Cheers!
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+School
+
+
+
+
+
+ * Ah, school. I'm finally beginning to get into the swing of things in this
+   crazy second semester. A quarter has just passed, many assessments finished,
+   and now I can clean out much of my binder.
+ * Sophomore speakouts are coming up soon! I really need to organize myself and
+   strengthen my topic. As I've mentioned earlier
+   [http://www.thehomeworklife.co.nf/index.html?post=66], I'll try to use these
+   blog posts as thinking on paper.
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+Extracurriculars
+
+
+
+ * School bowling season has finished. I need to find new recruits for my
+   captain-hood next year. Regular bowling is as normal.
+ * Track season has started! I'm injured. ☹
+ * I've had quite an interesting experience with piano. I played terribly at the
+   YMF, completely starting over because of a memory error. I somehow managed to
+   get a (full) 5 score on it, however. Today, with the same piece, I managed to
+   tie for first in a Chopin competition. I was not expecting it, and now I have
+   to play it again next week. I'm not enthused. That means another week of hard
+   practice, another week of stressing out, another week of time management
+   battles, another week of multiple piano lessons. But on the upside, it means
+   $50 in prize money3!
+
+1: I believe, as I have not not played the original game.
+
+2: Check out our GitHub [https://github.com/BarlowProgramming/].
+
+3: It is not actually that much considering that the entry fee was $45.
+

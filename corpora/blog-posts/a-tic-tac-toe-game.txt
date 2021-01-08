@@ -1,0 +1,7 @@
+I thought the previous memory game [extras/MemoryGame] was pretty fun to make
+and play, so I thought I'd make another one, perhaps with the same color scheme
+and a similar feel. And so I did!
+
+Introducing the Tic Tac Toe [extras/TicTacToe] game for TheHomeworkLife. It has
+pretty good logic and is actually difficult to beat (especially if it starts in
+the middle)! Have fun with it!
