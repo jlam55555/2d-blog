@@ -100,8 +100,26 @@ const key_map = {
     'ArrowLeft': 2, 'KeyA': 2,
     'ArrowRight': 3, 'KeyD': 3,
 };
-document.addEventListener('keyup', ev => pressed_keys[key_map[ev.code]] = 0);
-document.addEventListener('keydown', ev => pressed_keys[key_map[ev.code]] = 1);
+const key_handler = evt => {
+    // movement handlers; just update key map
+    if (evt.code in key_map) {
+        pressed_keys[key_map[evt.code]] = evt.type === 'keyup' ? 0 : 1;
+        return;
+    }
+
+    // when other keys are pressed
+    if (evt.type === 'keydown') {
+        if (evt.code === 'KeyQ') {
+            scale_slider.value = Math.max(1, parseInt(scale_slider.value) - 1);
+            scale_handler();
+        } else if (evt.code === 'KeyE') {
+            scale_slider.value = Math.min(20, parseInt(scale_slider.value) + 1);
+            scale_handler();
+        }
+    }
+};
+document.addEventListener('keyup', key_handler);
+document.addEventListener('keydown', key_handler);
 
 // timed movement
 const movement_handler = () => {
