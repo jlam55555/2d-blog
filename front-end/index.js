@@ -1,15 +1,19 @@
 const cvs = document.querySelector('canvas#cvs');
 const ctx = cvs.getContext('2d');
 
+const scale_slider = document.querySelector('input#scale-slider');
+
 // set canvas width and height to window width and height
 // not responsive to resizing for now
 const width = cvs.width = window.innerWidth,
     height = cvs.height = window.innerHeight;
 
-// camera_width/height indicates FOV
-const camera_width = 10,
-    camera_height = 10,
-    camera_speed = 0.05,
+// camera_width/height indicates FOV; can change with scale_slider
+let camera_width = 1,
+    camera_height = 1;
+scale_slider.addEventListener('input', evt => camera_width = camera_height = scale_slider.value);
+
+const camera_speed = 0.05,
     update_rate = 1000;
 
 // doc_coords are the positions of the points of interest
