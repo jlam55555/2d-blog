@@ -5,14 +5,33 @@ const scale_slider = document.querySelector('input#scale-slider');
 
 // set canvas width and height to window width and height
 // not responsive to resizing for now
-const width = cvs.width = window.innerWidth,
-    height = cvs.height = window.innerHeight;
+let width, height, camera_width, camera_height;
 
 // camera_width/height indicates FOV; can change with scale_slider
-let camera_width = 1,
-    camera_height = 1;
-scale_slider.addEventListener('input', evt => camera_width = camera_height = scale_slider.value);
+const scale_handler = () => {
+    // if wide screen, then set scale factor for width (to prevent grid
+    // from becoming excessively small)
+    if (width > height) {
+        camera_width = scale_slider.value;
+        camera_height = scale_slider.value * height / width;
+    }
+    // else set scale factor for height
+    else {
+        camera_width = scale_slider.value * width / height;
+        camera_height = scale_slider.value;
+    }
+};
+const resize_handler = () => {
+    width = cvs.width = window.innerWidth;
+    height = cvs.height = window.innerHeight;
+    scale_handler();
+};
+scale_slider.addEventListener('input', scale_handler);
+window.addEventListener('resize', resize_handler);
+resize_handler();
 
+// camera_speed is movement speed, update_rate is how often position gets
+// updated (in Hz)
 const camera_speed = 0.05,
     update_rate = 1000;
 
@@ -37,7 +56,7 @@ const sc2dc = (screen_x, screen_y) => [
 
 // for negative modulus
 // see: https://stackoverflow.com/a/17323608/2397327
-const mod =(n, m) => ((n % m) + m) % m;
+const mod = (n, m) => ((n % m) + m) % m;
 
 // main painting loop
 const draw = () => {
@@ -50,7 +69,7 @@ const draw = () => {
         grid_start_y = camera_start_y - mod(camera_start_y, grid_interval_y),
         grid_count = Math.max(camera_width / grid_interval_x, camera_height / grid_interval_y);
 
-    for (let i = 0; i < camera_width / grid_interval_x; ++i) {
+    for (let i = 0; i < grid_count; ++i) {
         const [screen_x, screen_y] = dc2sc(grid_start_x + grid_interval_x * (i+1), grid_start_y + grid_interval_y * (i+1));
         ctx.fillRect(screen_x, 0, 1, height);
         ctx.fillRect(0, screen_y, width, 1);
