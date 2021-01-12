@@ -54,9 +54,32 @@ const sc2dc = (screen_x, screen_y) => [
     (screen_y - (height / 2)) * camera_height / height + camera_y
 ];
 
+// documents in view; updated whenever you move/scale/resize, etc.
+let docs_in_view = new Set();
+// how far from the edge of the screen in doc coordinates to still consider it
+// (in pixels)
+const doc_boundary_threshold = Math.max(width, height) / 2;
+const update_docs_in_view = () => {
+    for (var i = 0; i < doc_coords.length; ++i) {
+        const [screen_x, screen_y] = dc2sc(...doc_coords[i]);
+        if (screen_x > -doc_boundary_threshold
+            && screen_x < width + doc_boundary_threshold
+            && screen_y > -doc_boundary_threshold
+            && screen_y < height + doc_boundary_threshold) {
+            docs_in_view.add(i);
+        } else {
+            docs_in_view.delete(i);
+        }
+    }
+};
+update_docs_in_view();
+
 // for negative modulus
 // see: https://stackoverflow.com/a/17323608/2397327
 const mod = (n, m) => ((n % m) + m) % m;
+
+// necessary for drawing, calculated on mouse move or any resize events
+let hovered_document = -1;
 
 // main painting loop
 const draw = () => {
@@ -76,10 +99,19 @@ const draw = () => {
     }
 
     // draw documents
-    for (const [doc_x, doc_y] of doc_coords) {
+    for (const doc_index of docs_in_view) {
         // translate document coordinates to screen coordinates
-        const [screen_x, screen_y] = dc2sc(doc_x, doc_y);
-        ctx.fillRect(screen_x, screen_y, 20, 20);
+        const [screen_x, screen_y] = dc2sc(...doc_coords[doc_index]);
+        if (doc_index === hovered_document) {
+            ctx.fillStyle = "#ff8888";
+            ctx.beginPath();
+            ctx.ellipse(screen_x, screen_y, 14.14, 14.14, 0, 0, 2*Math.PI);
+            ctx.closePath();
+            ctx.fill();
+            ctx.fillStyle = "black";
+        }
+
+        ctx.fillRect(screen_x-10, screen_y-10, 20, 20);
     }
 
     const [left, top] = sc2dc(0, 0);
@@ -104,11 +136,9 @@ const key_handler = evt => {
     // movement handlers; just update key map
     if (evt.code in key_map) {
         pressed_keys[key_map[evt.code]] = evt.type === 'keyup' ? 0 : 1;
-        return;
     }
-
     // when other keys are pressed
-    if (evt.type === 'keydown') {
+    else if (evt.type === 'keydown') {
         if (evt.code === 'KeyQ') {
             scale_slider.value = Math.max(1, parseInt(scale_slider.value) - 1);
             scale_handler();
@@ -117,6 +147,8 @@ const key_handler = evt => {
             scale_handler();
         }
     }
+
+    update_docs_in_view();
 };
 document.addEventListener('keyup', key_handler);
 document.addEventListener('keydown', key_handler);
@@ -133,3 +165,35 @@ const movement_handler = () => {
         camera_x += camera_speed;
 };
 setInterval(movement_handler, 1/update_rate);
+
+// find the closest point, don't need this to update too often
+// TODO: can probably move this into a worker
+// TODO: can probably refine when this gets called, only needs to get called
+//      on certain events
+const mouse_threshold = 30;
+let mouse_x = -1, mouse_y = -1;
+const dist = (x1, y1, x2, y2) => Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
+const find_selected_handler = () => {
+    let closest = -1,
+        closest_distance = Number.MAX_VALUE;
+
+    for (const doc_index of docs_in_view) {
+        const [screen_x, screen_y] = dc2sc(...doc_coords[doc_index]);
+        const dst = dist(screen_x, screen_y, mouse_x, mouse_y);
+
+        if (dst < closest_distance) {
+            closest = doc_index;
+            closest_distance = dst;
+        }
+    }
+
+    if (closest_distance < mouse_threshold) {
+        hovered_document = closest;
+        cvs.classList.add('select');
+    } else {
+        hovered_document = -1;
+        cvs.classList.remove('select');
+    }
+};
+setInterval(find_selected_handler, 1/60);
+window.addEventListener('mousemove', evt => ({clientX: mouse_x, clientY: mouse_y} = evt));
