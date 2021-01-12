@@ -4,8 +4,8 @@ tab. I meant to create it as a cleaner interface and simpler to use.
 
 There are only two controls:
 
- * Shift ⇧ + Enter ⏎ Open a new tab.
- * Shift ⇧ + Ctrl Show all tabs.
+ * Shift  + Enter  Open a new tab.
+ * Shift  + Ctrl Show all tabs.
 
 
 
