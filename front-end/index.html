@@ -6,9 +6,30 @@
             body, html {
                 padding: 0;
                 margin: 0;
+                height: 100%;
             }
-            canvas {
+            canvas#cvs {
                 display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            canvas#cvs.select {
+                cursor: pointer;
+            }
+            div#controls {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 100px;
+                width: 100px;
+                background-color: lightslategray;
+            }
+            input#scale-slider {
+                display: block;
+                width: 100px;
+                height: 100px;
+                margin: 0;
             }
         </style>
         <script src="index.js" defer></script>
@@ -18,5 +39,8 @@
             HTML5 canvas is not supported on your browser. Please upgrade to a
             more modern browser.
         </canvas>
+        <div id="controls">
+            <input type="range" min="1" max="20" value="10" id="scale-slider">
+        </div>
     </body>
 </html>
