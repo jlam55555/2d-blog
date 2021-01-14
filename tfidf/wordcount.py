@@ -5,6 +5,7 @@ from typing import List, Dict, Tuple
 from nltk.tokenize import word_tokenize
 from sklearn.manifold import TSNE as tsne
 import matplotlib.pyplot as plt
+import pandas as pd
 
 nltk.download('punkt')
 
@@ -12,7 +13,12 @@ nltk.download('punkt')
 def tfidf(word_arr: np.array) -> np.array:
     size_doc = word_arr.shape[1]
     tf = word_arr / np.sum(word_arr, axis=0)
-    idf = size_doc / (np.sum(word_arr > 0, axis=1)[:, np.newaxis])
+    # idf = size_doc / (np.sum(word_arr > 0, axis=1)[:, np.newaxis])
+
+    # testing alternative inverse weighting scheme
+    # to get rid of the most common words
+    idf = np.sum(word_arr, axis=1)[:, np.newaxis] ** -1
+
     return tf * idf
 
 
@@ -73,15 +79,31 @@ dic, voc_list = make_dic(docs)
 word_arr = wordcheck(docs, dic)
 output = tfidf(word_arr)
 
-print(output.shape)
+# normalize columns
+output = output / output.max(axis=0)
 
-# print(search_docs(output, dic, docs, 'computer'))
+# compressing the tf-idf values
+row_sums = np.sum(output, axis=1)
+word_indices = np.array(np.argsort(row_sums)[-1:-101:-1])
+output = output[word_indices, :]
+voc_list = [voc_list[i] for i in word_indices]
+dic = {}
+for i, word in enumerate(voc_list):
+    dic[word] = i
+
+pd.DataFrame(data=output, index=voc_list, columns=docs) \
+    .to_csv('tf_idf_matrix.csv')
+
+# print(search_docs(output, dic, docs, 'veikk'))
 
 embedded_output = tsne().fit_transform(output.T)
 plt.scatter(embedded_output[:, 0], embedded_output[:, 1])
 plt.show()
 
-print([docs[doc_index] for doc_index in np.argwhere(embedded_output[:, 0] > 300).flatten()])
+for doc in ['button-mapping-journeys', 'veikk-linux-driver-v3-notes', 'on-developing-a-linux-driver', 'code-opinions']:
+    print(embedded_output[docs.index('corpora/blog-posts/' + doc + '.txt'), :])
+
+# print([docs[doc_index] for doc_index in np.argwhere(embedded_output[:, 0] > 300).flatten()])
 
 # voc_list = [voc_list[i] for i in np.argsort(output[:, 1])]
 # output = output[np.argsort(output[:,1])]
